@@ -1,6 +1,6 @@
 # Half-Life Regression
 
-Copyright (c) 2016 [Duolingo, Inc.](https://duolingo.com) MIT License.
+Copyright (c) 2016 [Duolingo, Inc.](https://duolingo.com) MIT License.  [adapted @ Yoel Zweig]
 
 Half-life regression (HLR) is a model for spaced repetition practice, with particular applications to second language acquisition. The model marries psycholinguistic theory with modern machine learning techniques, indirectly estimating the "half-life" of words (and potentially any other item or fact) in a student's long-term memory.
 
