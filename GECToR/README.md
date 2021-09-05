@@ -17,7 +17,7 @@ run shell training interface: => \
 python t_tempora.py 9
 
 
-produce exercises: => \
+produce exercises: =>
 1) adapt path to pretrained models in g_predict.py => def get_single_model(), def get_multi_model()  (download pretrained models from https://github.com/grammarly/gector) \
 2) create a folder 'z_test' in the current directory to hold the generated exercises \
 3) python g_predict.py -m "" -v "" -i <path_to_input_file> -exercises 1 
