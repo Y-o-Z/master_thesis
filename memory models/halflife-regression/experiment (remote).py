@@ -283,7 +283,7 @@ argparser.add_argument('-t', action="store_true", default=False, help='omit half
 argparser.add_argument('-rw', action="store_true", default=False, help='omit right and wrong terms (for hlr only)')
 argparser.add_argument('-m', action="store", dest="method", default='hlr', help="hlr, lr, leitner, pimsleur, my_pimsleur, constant")
 argparser.add_argument('-x', action="store", dest="max_lines", type=int, default=None, help="maximum number of lines to read (for dev)")
-argparser.add_argument('-v', action="store_true", default=False, help='visualize')
+argparser.add_argument('-v', action="store_true", default="False", help='visualize')
 argparser.add_argument('input_file', action="store", help='log file for training')
 
 
@@ -329,7 +329,7 @@ if __name__ == "__main__":
         import matplotlib.pyplot as plt
         import pandas as pd
         
-        train, test = read_data("hlr_data.gz", "hlr", False, False, False, None)
+        train, test = read_data(args.input_file, "hlr", False, False, False, args.max_lines)
         train_pd, test_pd = pd.DataFrame(train), pd.DataFrame(test)
         train_pd = pd.concat([train_pd, test_pd])
         
