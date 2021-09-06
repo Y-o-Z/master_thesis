@@ -215,7 +215,6 @@ class GecBERTModel(object):
 
         return all_results, all_transformations, all_indices
 
-    @staticmethod
     def update_final_batch(self, final_batch, pred_ids, pred_batch, prev_preds_dict):
         # prev_pred_dict → numbered final_batch
         new_pred_ids = []
