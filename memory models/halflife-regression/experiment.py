@@ -409,7 +409,7 @@ if False:
     plt.figure(figsize=(12, 5))
     # plt.title("Recall rate distribution", fontdict={"fontsize": 13, "fontweight": "bold"})
     plt.hist(train_pd["p"], bins=100)
-    plt.xlabel("measured recall probability " + r"$\hat{p}$")
+    plt.xlabel("measured recall probability " + r"$p$")
     plt.xlim(0, 1)
     plt.xticks([i / 10 for i in range(0, 11)])
     plt.ylabel("number of training sessions")

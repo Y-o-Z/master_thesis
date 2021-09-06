@@ -361,7 +361,7 @@ if __name__ == "__main__":
         plt.style.use("seaborn")
         plt.figure(figsize=(12, 5))
         plt.hist(train_pd["p"], bins=100)
-        plt.xlabel("observed recall probability " + r"$\hat{p}$", fontsize=14)
+        plt.xlabel("observed recall probability " + r"$p$", fontsize=14)
         plt.xlim(0, 1)
         plt.xticks([i / 10 for i in range(0, 11)])
         plt.ylabel("number of training sessions", fontsize=14)
