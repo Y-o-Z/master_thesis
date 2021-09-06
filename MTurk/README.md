@@ -6,3 +6,6 @@
 - results_test.py: inspect & evaluate language tests
 - results_train.py: inspect training HITs, update MTurker dictionary
 - helper.py: helper functions
+
+- mturker_dictionary: used by the Leitner model to predict half-life and memory retention
+- feedback_II: grammatical explanations
